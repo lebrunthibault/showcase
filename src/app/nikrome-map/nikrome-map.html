@@ -1,0 +1,23 @@
+<style>
+  #map { height: 500px; width: 1000px; }
+
+  .leaflet-popup-content {
+    margin: 0;
+  }
+</style>
+
+<main class="main">
+  <div class="content">
+    <h1>Semi marathon du Ventoux (résultats)</h1>
+    <div id="map"></div>
+  </div>
+</main>
+
+<app-modal
+  [isOpen]="isModalOpen"
+  [title]="modalTitle"
+  [headers]="modalHeaders"
+  [menData]="modalMenData"
+  [womenData]="modalWomenData"
+  (closeModal)="closeModal()"
+></app-modal>

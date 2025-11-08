@@ -1,0 +1,18 @@
+::ng-deep .compact-popup .leaflet-popup-content-wrapper {
+  padding: 5px;
+  background: #2C3E50;
+  color: #fff;
+}
+
+::ng-deep .compact-popup .leaflet-popup-content {
+  margin: 5px;
+}
+
+::ng-deep .clickable-popup .leaflet-popup-content-wrapper {
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #34495e;
+  }
+}

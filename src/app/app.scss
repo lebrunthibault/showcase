@@ -1,0 +1,60 @@
+// Global app styles
+
+.navbar {
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .nav-home {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  background: white;
+
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    color: #2C3E50;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      color: #0077b5;
+    }
+
+    &:nth-child(2):hover {
+      color: #333;
+    }
+
+    &.malt-link:hover {
+      filter: brightness(1.2);
+    }
+  }
+}
